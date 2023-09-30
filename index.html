@@ -1,0 +1,256 @@
+<html>
+<head>
+  <title>Mobilenet vs Googlelens</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="background.jpg">
+<center>
+  <h3 class="btn btn-primary heading">Real Time Image Identification App
+    <hr>
+    <center>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-sx-6 heading_div">
+       Mobilenet or GoogleLens?
+        <br>
+        </div>
+        <br><br>
+    </center>
+    <br>
+  </h3>
+  <br><br>
+   <div class="example_div"id="div1">
+    <h3 id="remote">Remote</h3>
+<image src="remote.jpg"></image>
+<br>
+  
+  <p class="btn btn-danger result_para_tag">Google lens recognizes : 
+    <span id="googlelens1">Remote Controller</span> 
+  </p>
+  
+  <br><br>
+  <p class="btn btn-info result_para_tag">Mobilenet recognizes : 
+    <span id="mobilenet1">Remote Control</span> 
+  </p>
+  <br><br>
+  <p class="btn btn-success result_para_tag">Conclusion : 
+    <hr>
+    <span id="conclusion1">Draw</span>
+  </p>
+  </div>
+  <br><br>
+
+
+  <div class="example_div"id="div2">
+    <h3 id="phone">phone</h3>
+<image src="phone.jpg"></image>
+<br>
+  
+  <p class="btn btn-danger result_para_tag">Google lens recognizes : 
+    <span id="googlelens1">Giftcard</span> 
+  </p>
+  
+  <br><br>
+  <p class="btn btn-info result_para_tag">Mobilenet recognizes : 
+    <span id="mobilenet1">Mobile Phone</span> 
+  </p>
+  <br><br>
+  <p class="btn btn-success result_para_tag">Conclusion : 
+    <hr>
+    <span id="conclusion2">mobilenet since it is a phone</span>
+  </p>
+  </div>
+  <br><br>
+
+  <div class="example_div"id="div3">
+    <h3 id="gatoraid">Gatoraid</h3>
+<image src="gatoraid.jpg"></image>
+<br>
+  
+  <p class="btn btn-danger result_para_tag">Google lens recognizes : 
+    <span id="googlelens1">Gatoraid</span> 
+  </p>
+  
+  <br><br>
+  <p class="btn btn-info result_para_tag">Mobilenet recognizes : 
+    <span id="mobilenet1">Water Bottle</span> 
+  </p>
+  <br><br>
+  <p class="btn btn-success result_para_tag">Conclusion : 
+    <hr>
+    <span id="conclusion3">Googlelens since it is Gatoraid</span>
+  </p>
+  </div>
+  <br><br>
+
+  <div class="example_div"id="div4">
+    <h3 id="car">Car</h3>
+<image src="Car.jpg"></image>
+<br>
+  
+  <p class="btn btn-danger result_para_tag">Google lens recognizes : 
+    <span id="googlelens1">Toy car</span> 
+  </p>
+  
+  <br><br>
+  <p class="btn btn-info result_para_tag">Mobilenet recognizes : 
+    <span id="mobilenet1">reel</span> 
+  </p>
+  <br><br>
+  <p class="btn btn-success result_para_tag">Conclusion : 
+    <hr>
+    <span id="conclusion4">Googlelens since its car</span>
+  </p>
+  </div>
+  <br><br>
+
+  <div class="example_div"id="div5">
+    <h3 id="nintendo">Nintendo Switch lite</h3>
+<image src="Nintendo.jpg"></image>
+<br>
+  
+  <p class="btn btn-danger result_para_tag">Google lens recognizes : 
+    <span id="googlelens1">Nintendo Switch Lite</span> 
+  </p>
+  
+  <br><br>
+  <p class="btn btn-info result_para_tag">Mobilenet recognizes : 
+    <span id="mobilenet1">Hand-held computer</span> 
+  </p>
+  <br><br>
+  <p class="btn btn-success result_para_tag">Conclusion : 
+    <hr>
+    <span id="conclusion5">Googlelens since its a nintendo switch lite</span>
+  </p>
+  </div>
+  <br><br>
+
+  <div class="example_div"id="div6">
+    <h3 id="book">Book</h3>
+<image src="book.jpg"></image>
+<br>
+  
+  <p class="btn btn-danger result_para_tag">Google lens recognizes : 
+    <span id="googlelens1">Paperwork book</span> 
+  </p>
+  
+  <br><br>
+  <p class="btn btn-info result_para_tag">Mobilenet recognizes : 
+    <span id="mobilenet1">Book</span> 
+  </p>
+  <br><br>
+  <p class="btn btn-success result_para_tag">Conclusion : 
+    <hr>
+    <span id="conclusion6">Mobilenet since it is a book</span>
+  </p>
+  </div>
+  <br><br>
+
+  <div class="example_div"id="div7">
+    <h3 id="pokemon">Pokemon Card</h3>
+<image src="Pokemon.jpg"></image>
+<br>
+  
+  <p class="btn btn-danger result_para_tag">Google lens recognizes : 
+    <span id="googlelens1">Pokemon card</span> 
+  </p>
+  
+  <br><br>
+  <p class="btn btn-info result_para_tag">Mobilenet recognizes : 
+    <span id="mobilenet1">Cassete</span> 
+  </p>
+  <br><br>
+  <p class="btn btn-success result_para_tag">Conclusion : 
+    <hr>
+    <span id="conclusion7">Googlenet since it is a pokemon card</span>
+  </p>
+  </div>
+  <br><br>
+
+  <div class="example_div"id="div8">
+    <h3 id="mailbox">Mailbox</h3>
+<image src="Mailbox.jpg"></image>
+<br>
+  
+  <p class="btn btn-danger result_para_tag">Google lens recognizes : 
+    <span id="googlelens1"></span> 
+  </p>
+  
+  <br><br>
+  <p class="btn btn-info result_para_tag">Mobilenet recognizes : 
+    <span id="mobilenet1"></span> 
+  </p>
+  <br><br>
+  <p class="btn btn-success result_para_tag">Conclusion : 
+    <hr>
+    <span id="conclusion8"></span>
+  </p>
+  </div>
+  <br><br>
+
+  <div class="example_div"id="div9">
+    <h3 id="tissue">Tissue Box</h3>
+<image src="tissuebox.jpg"></image>
+<br>
+  
+  <p class="btn btn-danger result_para_tag">Google lens recognizes : 
+    <span id="googlelens1"></span> 
+  </p>
+  
+  <br><br>
+  <p class="btn btn-info result_para_tag">Mobilenet recognizes : 
+    <span id="mobilenet1"></span> 
+  </p>
+  <br><br>
+  <p class="btn btn-success result_para_tag">Conclusion : 
+    <hr>
+    <span id="conclusion9"></span>
+  </p>
+  </div>
+  <br><br>
+
+  <div class="example_div"id="div10">
+    <h3 id="notebook">Notebook</h3>
+<image src="notebook.jpg"></image>
+<br>
+  
+  <p class="btn btn-danger result_para_tag">Google lens recognizes : 
+    <span id="googlelens1"></span> 
+  </p>
+  
+  <br><br>
+  <p class="btn btn-info result_para_tag">Mobilenet recognizes : 
+    <span id="mobilenet1"></span> 
+  </p>
+  <br><br>
+  <p class="btn btn-success result_para_tag">Conclusion : 
+    <hr>
+    <span id="conclusion10"></span>
+  </p>
+  </div>
+  <br><br>
+
+  <h1 class="btn btn-success"><b>Final Conclusion - </b>
+  <br>
+  <p id="final_conclusion"></p>
+  </h1>
+  <br><br><br><br>
+  <div class="copy_right_footer">
+    Developed by - Ethan
+</div>
+</center>
+
+
+
+<script src="main.js"></script>
+</body>
+
+</html>
+
+
